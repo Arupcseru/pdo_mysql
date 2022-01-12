@@ -3,12 +3,12 @@
 
 function Connect()
 {
-  $server_name = "localhost";
-  $username = "sql6464972";
-  $password = "C1eK6ge5ur";
-  $db_name = "bookstore";
+  $server_name = "sql6.freesqldatabase.com";
+  $username = "sql6465231";
+  $password = "UTHiIAmaUd";
+  $db_name = "sql6465231";
   try {
-    $db = new PDO("mysql:host=$server_name;dbname=$db_name", "root", "");
+    $db = new PDO("mysql:host=$server_name;dbname=$db_name", $username, $password);
     // set the PDO error mode to exception
     // $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
