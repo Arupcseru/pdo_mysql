@@ -1,13 +1,9 @@
 <?php
-
-    require 'database/connection.php';
-    require 'database/utility.php';
     
+    require 'database/connection.php';
+
     $db = connect();
     $raw_data = show_table($db);
-
-    $key1 = '';
-    $data = '';
     $result = array();
 
     if (isset($_POST['search'])) {
