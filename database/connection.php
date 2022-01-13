@@ -1,6 +1,5 @@
 <?php
 
-
 function Connect()
 {
   $server_name = "sql6.freesqldatabase.com";
@@ -39,7 +38,6 @@ function add_book($db,$title, $author, $available, $isbn, $pages){
   $db->query($query_st);
 
 }
-
 function show_table($db)
 {
   $query_st = "SELECT * FROM `books` WHERE 1";
